@@ -1,0 +1,42 @@
+<!--
+1. Crie 5 variáveis e atribua valores, respeitando os tipos de dados a serem armazenados. 
+Em seguida, em uma variável chamada `profissional`, concatene as variáveis abaixo formando
+uma *string* que faça sentido com os dados informados e apresente essa variável com o método
+`document.write()` em algum `arquivo.html` ou utilizando o `console.log()`.
+    - nome (*string*)
+    - telefone (*string*)
+    - se possui convênio médico ou não (*booleano*)
+    - profissão (*string*)
+    - salário (*number*) 
+-->
+
+<!DOCTYPE html>
+<html lang="pt - BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex01</title>
+</head>
+<body>
+
+    <script>
+
+        let nome = "Gabriel";
+        let telefone = "(11) 9999-5555"
+        let possuiConvenioMedico = true;
+        let profissao = "Desenvolvedor";
+        let salario = 1000;
+
+        let profissional = ("Nome: " + nome 
+                            + "<br> Telefone: " + telefone 
+                            + "<br> Possui convênio médico: " + possuiConvenioMedico
+                            + "<br> Profissão: " + possuiConvenioMedico
+                            + "<br> Salário: R$ " + salario);
+
+        document.write(profissional);
+
+    </script>
+    
+</body>
+</html>

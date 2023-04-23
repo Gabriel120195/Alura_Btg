@@ -1,0 +1,49 @@
+<!-- 
+Crie um arquivo HTML chamado `clientes_jessica.html` e dentro da tag `<script></script>` 
+utilize o método `document.write()` com as informações abaixo para resolver os exercícios 
+**4** e **5.**
+
+Jéssica precisa de um programa para calcular e completar informações da sua empresa de forma 
+automática. A tabela abaixo mostra alguns dados das 5 primeiras cidades onde ela mais possui 
+clientes ativos: 
+-->
+
+
+<!DOCTYPE html>
+<html lang="pt - BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex04</title>
+</head>
+<body>
+
+    <script>
+
+        let beloHorizonte = "BH";
+        let saoPaulo = "SP";
+        let salvador = "SA";
+        let campoGrande = "CG";
+        let coritiba = "CR";
+
+        let clientesBH = 23;
+        let clientesSP = 12;
+        let clientesSA = 11;
+        let clientesCG = 10;
+        let clientesCR = 8;
+
+        let faturamentoBH = 2950;
+        let faturamentoSP = 3950;
+        let faturamentoSA = 1329;
+        let faturamentoCG = 2412;
+        let faturamentoCR = 626;
+
+        let clintesTotal = (clientesBH + clientesSP + clientesSA + clientesCG + clientesCR);
+
+        document.write("Nas capitais de " + beloHorizonte + ", " + saoPaulo + ", " + salvador + ", " + campoGrande + ", " + coritiba + ", Jéssica possui " + clintesTotal + " clientes");
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!--
+9. Crie o programa que irá converter os valores, de real para dólar neozelandês, baht tailandês
+e colón costarriquenho, e vice-versa. Apresente os valores convertidos no console, 
+utilizando console.log().
+-->
+
+<!DOCTYPE html>
+<html lang="pt - BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex09</title>
+</head>
+<body>
+
+    <script>
+
+        function dolarNeozelandes(reais) {
+
+            let valorMoeda = (reais / 310) * 100;
+            console.log("Valor NZ: $ " + valorMoeda.toFixed(2));    
+        }
+
+        function bahtTailandes(reais) {
+
+            let valorMoeda = reais * 6.80;
+            console.log("Valor THB: ฿ " + valorMoeda.toFixed(2));
+        }
+
+        function colonCostarriquenho(reais) {
+            
+            let valorMoeda = reais * 105.43;
+            console.log("Valor CRC: ₡ " + valorMoeda.toFixed(2));
+        }
+
+        dolarNeozelandes(250);
+        bahtTailandes(250);
+        colonCostarriquenho(250);
+
+    </script>
+    
+</body>
+</html>

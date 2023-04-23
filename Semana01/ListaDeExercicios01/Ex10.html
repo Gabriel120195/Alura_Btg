@@ -1,0 +1,48 @@
+<!--
+10. O programa que você está desenvolvendo para essa agência, também fará o envio automático de
+e-mails para os clientes, de acordo com que os agentes de viagens informarem ao software. 
+Para testes, você espera receber alguns dados (que podem ser passados como parâmetros):
+- Nome do cliente
+- Destino
+- Valor das passagens
+- Diária do hotel
+- Valor do guia local
+- Custo fixo dessa viagem para X dias
+-->
+
+<!DOCTYPE html>
+<html lang="pt - BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex10</title>
+</head>
+<body>
+
+    <script>
+
+        let nome = prompt("Nome do Cliente");
+        let destino = prompt("Destino da viagem");
+        let valorPassagem = parseFloat(prompt("Valor da Passagem R$") * 2);
+        let diariaHotel = parseFloat(prompt("Valor da diária do hotel R$"));
+        let valorDoGuia = parseFloat(prompt("Valor do guia local R$"));
+        let diasViagem = parseInt(prompt("Dias de viagem:"));
+
+        diariaHotel = diariaHotel * diasViagem;
+
+        let valorTotal = (diariaHotel + valorDoGuia + valorPassagem);
+
+        let modeloFrase = ("Olá," + nome + "! É um prazer termos você como cliente e estamos ansiosos para que sua viagem para " + destino + " possa ocorrer em breve!"
+                            + "<br>Estou te encaminhando os custos:"
+                            + "<br>As passagens ficarão em torno de R$ " + valorPassagem.toFixed(2) + ", os custos para a acomodação de " + diasViagem + " dias serão de R$ " + diariaHotel.toFixed(2)
+                            + "<br>O guia local custará R$ " + valorDoGuia.toFixed(2)
+                            + "<br>Sua viagem custará R$ " + valorTotal.toFixed(2)); 
+
+        document.write(modeloFrase);
+        
+
+    </script>
+    
+</body>
+</html>

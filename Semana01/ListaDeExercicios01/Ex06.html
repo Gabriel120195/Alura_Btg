@@ -1,0 +1,52 @@
+<!--
+6. Com base na imagem acima, faça o que se pede:
+a) crie uma variável para cada figura geométrica, que armazene a fórmula que calcula a sua área   
+- Com as fórmulas armazenadas nessas variáveis, atribua valores em váriaveis para as bases, alturas 
+e raio das figuras e calcule
+b) a área do retângulo
+c) a área do círculo
+d) a área do triângulo retângulo
+Em seguida exiba os resultados do cálculos das áreas, imprimindo as variáveis através do `console.log()`.
+-->
+
+<!DOCTYPE html>
+<html lang="pt - BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex06</title>
+</head>
+<body>
+
+    <script>
+
+        function retangulo(base,altura) {
+
+            area = (base * altura);
+            console.log("Área do retângulo: " + area);
+            
+        }
+
+        function circulo(raio) {
+
+            area = Math.PI * (raio * raio);
+            console.log("Área do circulo: " + area);
+            
+        }
+
+        function trianguloRetangulo(base,altura) {
+
+            area = (base * altura) / 2;
+            console.log("Área do retângulo: " + area);
+        }
+
+        retangulo(2,4);
+        circulo(5);
+        trianguloRetangulo(2,4);
+        
+
+    </script>
+    
+</body>
+</html>
