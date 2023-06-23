@@ -1,0 +1,42 @@
+<!-- Nos exercícios **4** e **5** da Lista 1 de Exercícios de Lógica de Programação, você construiu uma aplicação para a 
+empresa de Jéssica. Agora, adicione todas as informações da tabela da empresa dela em arrays:
+
+    var cidades
+    var quantidadeDeClientesPorCidade
+    var lucroFaturamentoPorCidade
+    
+Percorra os arrays acima utilizando tanto o `while`, quanto o `for` e:
+a)Exiba os itens de cada array no console -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex07_A</title>
+</head>
+
+<body>
+
+    <script>
+        var cidades = ["BH", "SP", "SA", "CG", "CR"];
+        var qtdClientes = [23, 12, 11, 10, 8];
+        var faturamentos = [2950, 3950, 1329, 2412, 626];
+
+        console.log("==========Com While==========")
+        let i = 0
+        while (i < cidades.length) {
+            console.log("Sigla cidade = " + cidades[i] + " / Quantidade de clientes = " + qtdClientes[i] + " / Faturamento = " + faturamentos[i]);
+            i++;
+        }
+
+        console.log("==========Com For==========")
+        for (let i = 0; i < cidades.length; i++) {
+            console.log("Sigla cidade = " + cidades[i] + " / Quantidade de clientes = " + qtdClientes[i] + " / Faturamento = " + faturamentos[i]);
+        }
+    </script>
+
+</body>
+
+</html>

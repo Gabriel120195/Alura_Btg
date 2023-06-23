@@ -1,0 +1,31 @@
+<!-- Crie uma lista chamada `pessoa`, coloque valores dentro dela como: nome (*string*), idade (inteiro), CPF (*string*), 
+altura (decimal), se é maior de idade ou não (valor booleano `true` ou `false`). 
+Depois acesse a lista criada e mostre no console:
+    a) O primeiro elemento
+    b) O tamanho da lista
+    c) O último elemento -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex04</title>
+</head>
+
+<body>
+
+    <script>
+        var pessoa = ["Gabriel", 28, "12345678912", 1.80, true]
+
+        console.log("a) O primeiro elemento = " + pessoa[0]);
+        console.log("b) O tamanho da lista = " + pessoa.length);
+
+        let ult = pessoa.length - 1;
+        console.log("c) O último elemento = " + pessoa[ult]);
+    </script>
+
+</body>
+
+</html>

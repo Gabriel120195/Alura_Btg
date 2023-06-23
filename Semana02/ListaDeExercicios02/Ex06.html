@@ -1,0 +1,41 @@
+<!-- Crie um sistema para cadastrar animaizinhos num app de pets, em que o usuário deverá entrar com alguns dados:
+    - Nome do tutor ou tutora
+    - Telefone para contato
+        - E então, entrar com alguns dados dos pets:
+            - Nome
+            - Espécie
+            - Cor
+        - Após entrar com os dados de um pet, o app perguntará ao usuário se ele deseja cadastrar mais um pet
+Use a função `prompt()` e espere receber “Sim”, para continuar cadastrando mais pets, ou “Não”, 
+para encerrar o loop e finalizar os cadastros. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 06</title>
+</head>
+
+<body>
+    <script>
+        var nomeTutora = prompt("Nome tutor(a): ");
+        var telefone = prompt("Telefone: ");
+
+
+        do {
+
+            var nome = prompt("Nome do pet");
+            var especie = prompt("Espécie:");
+            var cor = prompt("Cor:");
+
+            i = prompt("Deseja cadastrar mais pets?");
+
+            console.log("Nome do pet: " + nome + " / Espécie: " + especie + " / Cor: " + cor);
+
+        } while (i === "Sim");
+
+    </script>
+</body>
+
+</html>

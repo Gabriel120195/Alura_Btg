@@ -1,0 +1,41 @@
+<!-- Um software utilizado em escolas, agora possibilitará que o líder de uma turma 
+seja escolhido conforme algumas regras. O software deve receber os 2 alunos mais indicados para a seleção, 
+e com isso ele deve receber os seguintes dados:
+
+    - Média escolar desses alunos em Língua Portuguesa
+    - Em caso de empate, será avaliada a média escolar em Matemática    
+Sua função deve receber como parâmetro o nome dos alunos e as médias nas duas disciplinas. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex03</title>
+</head>
+
+<body>
+
+    <script>
+        let nomeEscolhido;
+
+
+        function liderDaTurma(nomeAluno1, mediaPor1, mediaMat1, nomeAluno2, mediaPor2, mediaMat2) {
+
+            if (notaPor1 >= notaPor2 && notMat1 > notMat2) {
+                nomeEscolhido = aluno1;
+            } else {
+                nomeEscolhido = aluno2;
+            }
+
+        }
+
+        liderDaTurma("Gabriel", 10, 1, "Laura", 10, 5);
+
+        console.log(nomeEscolhido);
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!-- 1. Com as estruturas de repetição `for` e `while`, faça o que se pede:
+    a) Mostre os números de 1 a 50 na tela, dizendo se é par ou ímpar: -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex01_A</title>
+</head>
+
+<body>
+    <script>
+        console.log("====== Com For ======")
+        for (let i = 0; i <= 50; i++) {
+
+            if (i % 2 == 0) {
+                console.log(i + " = Par");
+            } else {
+                console.log(i + "= Impar");
+            }
+        }
+
+        console.log("====== Com While ======")
+        let contador = 1;
+        while (contador <= 50) {
+
+            if (contador % 2 == 0) {
+                console.log(contador + " = Par");
+            } else {
+                console.log(contador + "= Impar");
+            }
+            contador++
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!-- A diretoria de uma escola quer que o sistema de notas dos alunos tenha uma nova funcionalidade. Para isso, 
+contatou a equipe de TI e passou as seguintes informações:
+    - Todos os professores inserem as notas de seus alunos no sistema, e o sistema calcula a média
+    - A escola exige 1 prova e 1 trabalho valendo 10 pontos cada, por bimestre
+    - A média mínima esperada é 7.0
+        - A diretoria solicita receber um e-mail sobre os alunos que não atingiram a média no bimestre, constando:
+            - Nome do aluno ou aluna
+            - Disciplina em que ficou abaixo da média
+            - Média do bimestre nesta disciplina
+    Você é dev nessa equipe e deve criar a lógica a ser implementada para cumprir o que a diretoria exige.
+    - Caso o estudante tenha ficado acima da média, o programa deve retornar um `alert()` com a seguinte string:
+        *Fulano* está com as notas acima da média! Sua média foi: *X*
+    - Caso as notas estejam abaixo da média, o programa retorna a string:
+        *Fulano* está abaixo da média na disciplina de *Matemática*. Sua média foi de: *X* -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex05</title>
+</head>
+
+<body>
+    <script>
+        verificaMedia();
+        function verificaMedia(nomeEstudante, disciplina, notaProva, notaTrabalho) {
+
+            var nomeEstudante = prompt("Nome do estudante:");
+            var disciplina = prompt("Nome da disciplina:");
+            var notaProva = parseFloat(prompt("Nota da prova:"));
+            var notaTrabalho = parseFloat(prompt("Nota do trabalho:"));
+
+            var media = (notaProva + notaTrabalho) / 2;
+
+            if (media >= 7) {
+                alert(nomeEstudante + " está com as notas ACIMA da média! sua média foi: " + media);
+            } else {
+                alert(nomeEstudante + " está com as notas ABAIXO da média em " + disciplina + " sua média foi: " + media);
+
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!--Crie um programa que recebe 10 letras e ao final exibe todas elas no console. Armazene essas letras num array, e:
+    a) A primeira letra digitada
+    b) A quarta letra digitada
+    c) A quinta letra digitada
+    d) A última letra digitada
+    e) O tamanho da lista criada -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex08</title>
+</head>
+
+<body>
+    <script>
+        var letras = [];
+
+        function recebeLetras() {
+            var letra = prompt("Digite a letra:");
+            letras.push(letra);
+        }
+
+        for (let i = 0; i < 10; i++) {
+            recebeLetras();
+        }
+        console.log("Lista = " + letras)
+
+        console.log("Primeiro letra = " + letras[0]);
+        console.log("Quarta letra = " + letras[3]);
+        console.log("Quinta letra = " + letras[4]);
+        console.log("última letra = " + letras[letras.length - 1]);
+        console.log("Tamanho da lista = " + letras.length);
+    </script>
+</body>
+
+</html>
